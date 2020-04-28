@@ -1,0 +1,68 @@
+1.project calculator
+Test suit2
+Test case 
+multiply 2 integers
+multipy 2 decimel number
+2.add assertions
+3.pass integers from c level 
+//MultiplyResponse/MultiplyResult
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "MyProp", someValue ) 
+def myname=com.eviware.soapui.SoapUI.globalProperties.getPropertyValue( "name" ) 
+log.info myname
+testRunner.testCase.testSuite.project.setPropertyValue( "MyProp", someValue 
+
+java project.
+package 
+class
+
+new class selenium
+
+6:24 PM: Navigate onto Magento.com
+Click on the user icon
+Update the email as “……….”
+Update the password as “…………”
+Click on the login button
+
+
+Expected Result:
+Invalid login or password.
+practice
+
+https://netbanking.hdfcbank.com/netbanking/
+redbus.in
+http://www.echoecho.com/javascript4.htm
+
+6:33 PM: 1. Navigate onto https://demo.openemr.io/a/openemr
+2. Update username as admin
+3. Update password as pass
+4. Click on login button
+5. Navigate onto Patient/Client
+6. Choose New/Search
+7. Add the firstname, lastname
+8. Update DOB as today's date
+9. Update the Sex
+10. Click on the create new patient button above the form
+11. Click on confirm create new patient button
+
+Validate
+1. Alert message
+2. Happy birthday message
+
+12. Close the Birthday wishes message
+13. Choose Billy Smith from Menu bar at the right corner
+14. Click on Log Out
+https://dl.bintray.com/testng-team/testng-eclipse-release/
+https://repo1.maven.org/maven2/org/testng/testng/7.0.0/testng-7.0.0.jar" 
+
+plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+

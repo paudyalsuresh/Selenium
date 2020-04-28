@@ -1,0 +1,22 @@
+package browser;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Amazon {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driver.get("http://amazon.com");
+				driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]/span[1]")).click();
+				driver.findElement(By.id("createAccountSubmit")).clear();
+				driver.findElement(By.id("createAccountSubmit")).sendKeys("Suresh123");
+	}
+
+}

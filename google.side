@@ -1,0 +1,71 @@
+{
+  "id": "64f87b3f-0f27-469c-8137-ee67745ce49b",
+  "version": "2.0",
+  "name": "google",
+  "url": "http://google.com",
+  "tests": [{
+    "id": "529a1aed-3c9f-4f1f-b61c-02cd0b1e4ee9",
+    "name": "Untitled",
+    "commands": [{
+      "id": "86461dc2-2199-4810-a1a4-a85c74027d01",
+      "comment": "",
+      "command": "open",
+      "target": "http://google.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c859d9cc-6397-4e5a-a802-f81ddeca7689",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "26ef2148-0e4d-4fbc-9984-3b8712b4ca7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sbhl span",
+      "targets": [
+        ["css=.sbhl span", "css:finder"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div[2]/div[2]/ul/li/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'selenium')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc135478-a53a-4889-a448-a850dd02960c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rc:nth-child(3) .LC20lb",
+      "targets": [
+        ["css=.rc:nth-child(3) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//div/div/a/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8095fb5f-2fb5-486f-8664-3c4ebc748b1e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "SeleniumHQ Browser Automation",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bb398252-b709-42a9-b47f-2f063598a67c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["529a1aed-3c9f-4f1f-b61c-02cd0b1e4ee9"]
+  }],
+  "urls": ["http://google.com/"],
+  "plugins": []
+}

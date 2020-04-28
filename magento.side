@@ -1,0 +1,93 @@
+{
+  "id": "4a4b0f73-6375-4b3c-8177-8c7c600949a9",
+  "version": "2.0",
+  "name": "Magento",
+  "url": "http://magento.com",
+  "tests": [{
+    "id": "bc19d74e-b79c-40d7-9b2a-2548f84bf184",
+    "name": "Untitled",
+    "commands": [{
+      "id": "406197f6-f023-476b-bc7f-186b57354dd9",
+      "comment": "",
+      "command": "open",
+      "target": "http://magento.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3f2dd22-db5f-4bd7-8ba2-89eac0606583",
+      "comment": "",
+      "command": "click",
+      "target": "css=.account-icon",
+      "targets": [
+        ["css=.account-icon", "css:finder"],
+        ["xpath=//nav[@id='block-header']/ul/li[9]/a/span/div", "xpath:idRelative"],
+        ["xpath=//li[9]/a/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2617202a-8e1f-4ce3-b254-0449ddd2b17e",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=login[username]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "yesh.paudyal@gmail.com"
+    }, {
+      "id": "6ec6c2cd-f8fb-4301-a98f-1f797fdfd22e",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=login[password]", "name"],
+        ["css=.field:nth-child(3) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "suresh27"
+    }, {
+      "id": "7c52cc6e-81e8-42b2-a337-d78be87a14a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=send2",
+      "targets": [
+        ["id=send2", "id"],
+        ["name=send", "name"],
+        ["css=.login-form__bottom > #send2", "css:finder"],
+        ["xpath=//button[@id='send2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc9f40a2-7ec8-4083-8795-9ab1e1936b13",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.message-error > div",
+      "targets": [
+        ["css=.message-error > div", "css:finder"],
+        ["xpath=//main[@id='maincontent']/div[2]/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "invalid login or password"
+    }]
+  }],
+  "suites": [{
+    "id": "9134aa21-ad5a-425b-a896-132e4f83f1bc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bc19d74e-b79c-40d7-9b2a-2548f84bf184"]
+  }],
+  "urls": ["http://magento.com/"],
+  "plugins": []
+}

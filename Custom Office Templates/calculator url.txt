@@ -1,0 +1,7 @@
+http://www.dneonline.com/calculator.asmx?wsdl 
+//AddResponse/AddResult
+http://dummy.restapiexample.com/api/v1/create
+http://dummy.restapiexample.com/api/v1/update/{id}
+http://dummy.restapiexample.com/api/v1/delete/{id}
+//AddResponse/AddResult
+global ,project, test suit, tast case, test stepQQQQH HHHH

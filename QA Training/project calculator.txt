@@ -1,0 +1,16 @@
+1.project calculator
+Test suit2
+Test case 
+multiply 2 integers
+multipy 2 decimel number
+2.add assertions
+3.pass integers from c level 
+//MultiplyResponse/MultiplyResult
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "MyProp", someValue ) 
+def myname=com.eviware.soapui.SoapUI.globalProperties.getPropertyValue( "name" ) 
+log.info myname
+testRunner.testCase.testSuite.project.setPropertyValue( "MyProp", someValue 
+
+java project.
+package 
+class

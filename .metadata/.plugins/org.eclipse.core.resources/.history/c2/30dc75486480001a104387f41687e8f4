@@ -1,0 +1,48 @@
+package browser;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Manentoragister {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get("http://magento.com");
+		driver.findElement(By.xpath("/html/body/div[1]/header/div/div/div[2]/div/nav/ul/li[9]/a/span[1]/div")).click();
+		driver.findElement(By.id("register")).click();
+		driver.findElement(By.id("firstname")).clear();
+		driver.findElement(By.id("firstname")).sendKeys("suresh");
+		driver.findElement(By.id("lastname")).clear();
+		driver.findElement(By.id("lastname")).sendKeys("paudyal");
+		driver.findElement(By.id("email_address")).clear();
+		driver.findElement(By.id("email_addressr")).sendKeys("yesh.paudyal@gmail.com");
+		
+		Select CP=new Select(driver.findElement(By.id("company_type")));
+	     CP.selectByValue("deployment");
+	     Select role=new Select(driver.findElement(By.id("individual_role")));
+	     role.selectByValue("technical/developer");
+	     role.selectByIndex(2);
+	     Select country=new Select(driver.findElement(By.id("countrty")));
+	     country.selectByValue("USA");
+	     country.deselectByVisibleText("United State");
+	     
+		
+		driver.findElement(By.id("password")).clear();
+		driver.findElement(By.id("password")).sendKeys("suresh27");
+		driver.findElement(By.id("password-confirmation")).clear();
+		driver.findElement(By.id("password-confirmation")).sendKeys("suresh27");
+		if (!driver.findElement(By.id("agree_terms")).isSelected()){
+		driver.findElement(By.id("agree_terms")).click();
+		
+		}
+	}
+
+}

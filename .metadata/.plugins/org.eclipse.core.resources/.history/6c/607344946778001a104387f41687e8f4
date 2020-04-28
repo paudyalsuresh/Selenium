@@ -1,0 +1,9 @@
+package MyFirstPackage;
+
+public class MyFirstPrograme {
+
+   public static void main(string args[]) {
+	  
+	System.out.println("my name is Suresh");
+}
+}
